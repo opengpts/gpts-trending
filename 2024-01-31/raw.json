@@ -1,0 +1,1241 @@
+{
+    "info": {
+        "id": "trending",
+        "title": "Trending",
+        "description": "Most popular GPTs by our community",
+        "display_type": "ranked",
+        "display_group": "Top Picks",
+        "locale": "global"
+    },
+    "list": {
+        "items": [
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-alKfVrz9K",
+                        "organization_id": "org-6cutZe7Nt14xWcO2wEYZX9wv",
+                        "short_url": "g-alKfVrz9K-canva",
+                        "author": {
+                            "user_id": "user-QtjA7tnG6FEAwS6ohL1lGpVm__15997f18-669f-40df-9399-1a733ec0563e",
+                            "display_name": "canva.com",
+                            "link_to": "https://canva.com",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": null
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": "15997f18-669f-40df-9399-1a733ec0563e",
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Canva",
+                            "description": "Effortlessly design anything: presentations, logos, social media posts and more.",
+                            "welcome_message": "Hello! Excited to bring your visions to life? Start your creative journey with Canva. What will we design together today?",
+                            "prompt_starters": [
+                                "How about an inspirational quote graphic for social media?",
+                                "I need a poster for our online store’s seasonal sale",
+                                "Make an Instagram post about a breathtaking sunset",
+                                "Highlight my favorite hiking trail in a Facebook post",
+                                "Announce a pottery class discount in a social media story",
+                                "Put together a smart-looking A4 business proposal"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-6qPLxHx8u9lf2XszRtWG25RD?se=2123-10-14T00%3A38%3A41Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dlogo.png&sig=LV3ZLlRkK4S61JLukf%2B10WLwU4%2B7%2B6NNkTLm2gsbw%2BU%3D",
+                            "categories": [
+                                "other"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-04T18:10:16.376872+00:00",
+                        "updated_at": "2024-01-30T20:01:45.849980+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_1OMhzVMWuJar3ToH3g2Mjkam~gzm_tool_mdZOC4TtYLxWrn5abOx1Z3sT",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-42023159f802c534f3a827a5f16f5a07d932c483",
+                                "domain": "chatgpt-plugin.canva.com",
+                                "raw_spec": "{\n  \"openapi\": \"3.1.0\",\n  \"info\": {\n    \"title\": \"Canva Plugin\",\n    \"description\": \"A plugin that allows the user to generate designs or search templates from the user query.\",\n    \"version\": \"v0.0.1\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://chatgpt-plugin.canva.com\"\n    }\n  ],\n  \"paths\": {\n    \"/designs\": {\n      \"get\": {\n        \"description\": \"Get a list of Canva designs or templates to choose from.\",\n        \"operationId\": \"generateDesigns\",\n        \"parameters\": [\n          {\n            \"name\": \"query\",\n            \"in\": \"query\",\n            \"description\": \"The description of the design the user wants to generate. For example: motivational cat poster, wedding instagram post, birthday card for my dog. This should only have a maximum of 140 characters.\",\n            \"required\": true,\n            \"deprecated\": false,\n            \"allowEmptyValue\": false,\n            \"explode\": false,\n            \"allowReserved\": false,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"name\": \"locale\",\n            \"in\": \"query\",\n            \"description\": \"The 2-letter ISO language code and the 2-letter country code the user is using, separated by a dash.\",\n            \"required\": true,\n            \"deprecated\": false,\n            \"allowEmptyValue\": false,\n            \"explode\": false,\n            \"allowReserved\": false,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          }\n        ],\n        \"deprecated\": false,\n        \"security\": [\n          {\n            \"apiKey\": []\n          }\n        ]\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {},\n    \"securitySchemes\": {\n      \"apiKey\": {\n        \"type\": \"apiKey\"\n      }\n    }\n  }\n}",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "service_http",
+                                    "instructions": "",
+                                    "authorization_type": "bearer",
+                                    "verification_tokens": {},
+                                    "custom_auth_header": null
+                                },
+                                "privacy_policy_url": "https://www.canva.com/policies/ai-product-terms/"
+                            }
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-pmuQfob8d",
+                        "organization_id": "org-AWLMos7qkuCxcVO5OhJqPO9X",
+                        "short_url": "g-pmuQfob8d-image-generator",
+                        "author": {
+                            "user_id": "user-8UW0V9Gz998stjOgOVMwXVIh",
+                            "display_name": "NAIF J ALOTAIBI",
+                            "link_to": null,
+                            "selected_display": "name",
+                            "is_verified": true,
+                            "will_receive_support_emails": true
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "image generator",
+                            "description": "A GPT specialized in generating and refining images with a mix of professional and friendly tone.image generator",
+                            "welcome_message": "Hello! I'm the Image Generator Tool. How can I assist you with your image creation today?",
+                            "prompt_starters": [
+                                "Generate an image of a futuristic city.",
+                                "Create a portrait of a fictional character.",
+                                "Design a logo for a new tech startup.",
+                                "Illustrate a scene from a fantasy novel."
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-M1df4Ab7Ow6QCJ871tBUsi0x?se=2123-11-08T17%3A52%3A06Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D40face33-c6ad-4a5d-b402-5f7126e8325f.png&sig=G9qnRNHbnnN1gnz2NzVSyjwWvQ6hrGjr%2Be7hbYgnjRs%3D",
+                            "categories": [
+                                "Other"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-12-02T16:43:09.108969+00:00",
+                        "updated_at": "2024-01-30T20:01:36.004257+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_sTkqcaqsAFhjM4b959j5mP5X~gzm_tool_FWZcgGNvH7bOPxkb7MNxvKil",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_sTkqcaqsAFhjM4b959j5mP5X~gzm_tool_oKrzZ3BvFRBPkJSUiCU3aoEA",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-gFt1ghYJl",
+                        "organization_id": "org-3ii7erghCaIaZaIrIbXrIGLt",
+                        "short_url": "g-gFt1ghYJl-logo-creator",
+                        "author": {
+                            "user_id": "user-Yir1x5PJ8joAOlCh3NFgthdz",
+                            "display_name": "Chase Lean",
+                            "link_to": null,
+                            "selected_display": "name",
+                            "is_verified": true,
+                            "will_receive_support_emails": null
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Logo Creator",
+                            "description": "Use me to generate professional logo designs and app icons!",
+                            "welcome_message": "Hello",
+                            "prompt_starters": [
+                                "Generate me a logo featuring an ice cream",
+                                "Make me an app icon for an RPG adventure game"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-dqdS1PEGuFcQ1GliVE2qBchP?se=2123-10-17T09%3A45%3A51Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D_7c6e5ee7-e05e-4685-bd8a-c3d81188ceb8.png&sig=0b5iWxPIKs//MVBoEqZ93ADvuWW%2BFlzsma%2BVtkKXYls%3D",
+                            "categories": [
+                                "dalle"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-10T00:01:50.799536+00:00",
+                        "updated_at": "2024-01-30T20:04:17.450863+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_JMq4gx2Fo0Ze2NJlVCaA1omR~gzm_tool_NMgLSevAgOu3NA32RJ4qT34a",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_JMq4gx2Fo0Ze2NJlVCaA1omR~gzm_tool_hzJlb4f8Gb2bMviCA664U61c",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_JMq4gx2Fo0Ze2NJlVCaA1omR~gzm_tool_Ydg53xAezbxqwGcN0yLiA4f4",
+                            "type": "python",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-5QhhdsfDj",
+                        "organization_id": "org-TDpHsqzWRwZloYHZ7aWaYc4S",
+                        "short_url": "g-5QhhdsfDj-diagrams-show-me",
+                        "author": {
+                            "user_id": "user-rQXlwACeSMqQkLHv7fLLLaAT",
+                            "display_name": "helpful.dev",
+                            "link_to": "https://helpful.dev",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": true
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Diagrams: Show Me",
+                            "description": "Create Diagrams, Architecture Visualisations, Flow-Charts, Mind Map, Schemes and more. Great for coding, presentations and code documentation. Export and Edit your diagram for free!",
+                            "welcome_message": "",
+                            "prompt_starters": [
+                                "Sequence diagram explaining the Internet",
+                                "Mindmap of Martin Luther King Jr. ideas",
+                                "Promotion process at Google diagram",
+                                "Show some of the supported diagrams"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-oZfvHmuEyjlshQ6c0XSpx45i?se=2123-10-29T17%3A22%3A28Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dicon-larger-margin.jpg&sig=SpFBbocELPtmU0NMVIXqk6yT3Q2vx4hAVwNaRlgT1vc%3D",
+                            "categories": [
+                                "productivity"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-22T16:54:14.939783+00:00",
+                        "updated_at": "2024-01-30T17:45:43.010980+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_CVKnxQEVCSAXx4q1VKsIL4Hw~gzm_tool_vDEtyVKyATcnJDC27OIL3HIO",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-ebef6b132927bf81e2834638a43b6af8f07bcd59",
+                                "domain": "diagrams.helpful.dev",
+                                "raw_spec": "{\"openapi\":\"3.0.2\",\"info\":{\"title\":\"Show Me\",\"version\":\"0.1.0\"},\"servers\":[{\"url\":\"https://diagrams.helpful.dev\",\"description\":\"Development server\"}],\"paths\":{\"/diagram-guidelines\":{\"get\":{\"operationId\":\"get_DiagramGuidelinesRoute\",\"summary\":\"**ONLY USE MERMAID and graph, sequence, mindmap, timeline, entity-relationship UNLESS THE USER ASKS FOR A DIFFERENT DIAGRAM TYPE / LANGUAGE**\",\"parameters\":[{\"required\":false,\"schema\":{\"type\":\"string\",\"description\":\"Default or explicitly requested diagram language\",\"enum\":[\"blockdiag\",\"bpmn\",\"bytefield\",\"seqdiag\",\"actdiag\",\"nwdiag\",\"packetdiag\",\"rackdiag\",\"c4-with-plantuml\",\"d2\",\"dbml\",\"ditaa\",\"erd\",\"excalidraw\",\"graphviz\",\"mermaid\",\"nomnoml\",\"pikchr\",\"plantuml\",\"structurizr\",\"svgbob\",\"umlet\",\"vega\",\"vegalite\",\"wavedrom\",\"wireviz\",\"markmap\"]},\"name\":\"explicitlyRequestedByUserDiagramLanguage\",\"in\":\"query\"},{\"required\":true,\"schema\":{\"type\":\"string\",\"description\":\"Type of the diagram. Strongly preffered: graph, sequence, mindmap, timeline or entity-relationship\",\"enum\":[\"sequence\",\"use-case\",\"class\",\"object\",\"activity\",\"component\",\"deployment\",\"state\",\"timing\",\"graph\",\"entity-relationship\",\"user-journey\",\"gantt\",\"pie-chart\",\"requirement\",\"gitgraph\",\"mindmap\",\"timeline\",\"block\",\"network\",\"json\",\"yaml\",\"salt-wireframe\",\"rack\",\"grid\",\"dbml\",\"ascii\",\"digital-timing\",\"line-chart\",\"bar-chart\",\"histogram\"]},\"name\":\"diagramType\",\"in\":\"query\"}],\"responses\":{\"200\":{\"description\":\"Successful Response\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"diagramGuidelines\":{\"type\":\"string\",\"description\":\"The requested diagram guidelines. Make sure to follow the guidelines before rendering a diagram\"},\"diagramThemes\":{\"type\":\"string\",\"description\":\"Diagram themes to change the style of the diagram. The themes are specific to the diagram language. Don't render a diagram using a theme unless the user asks for it\"},\"diagramLanguage\":{\"type\":\"string\",\"description\":\"Selected diagram language. Prefer mermaid\"}}}}}}}}},\"/render\":{\"get\":{\"operationId\":\"get__MermaidRoute\",\"summary\":\"Taking a diagram, renders it and returns a link to the rendered image. Always request the diagram guidelines endpoint before requesting this endpoint\",\"parameters\":[{\"required\":true,\"schema\":{\"type\":\"string\",\"description\":\"Diagram language\",\"example\":\"mermaid\"},\"name\":\"diagramLanguage\",\"in\":\"query\"},{\"required\":true,\"schema\":{\"type\":\"string\",\"description\":\"Diagram type\",\"example\":\"graph\"},\"name\":\"diagramType\",\"in\":\"query\"},{\"required\":false,\"schema\":{\"type\":\"string\",\"description\":\"Theme for d2 diagram\",\"example\":\"neutral-grey_sketch\"},\"name\":\"d2Theme\",\"in\":\"query\"},{\"required\":true,\"schema\":{\"type\":\"string\",\"description\":\"Diagram to render. Avoid using a multiline string, instead use explicit newline characters.\"},\"name\":\"diagram\",\"in\":\"query\"},{\"required\":false,\"schema\":{\"type\":\"number\",\"description\":\"Track the number of remaining attempts to render the diagram\",\"default\":3},\"name\":\"remainingAttempts\",\"in\":\"query\"}],\"responses\":{\"200\":{\"description\":\"Successful Response\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"image\":{\"type\":\"string\",\"description\":\"URL to the rendered image\"},\"errorMessage\":{\"type\":\"string\",\"description\":\"Error message if there was an error\"},\"editDiagramOnline\":{\"type\":\"string\",\"description\":\"URL to the editor where the diagram can be edited\"},\"miroEditorLink\":{\"type\":\"string\",\"description\":\"URL to a drag and drop diagram interface where the diagram can be edited\"}}}}},\"required\":[\"results\"]}}}}}}},\"/show-ideas\":{\"get\":{\"operationId\":\"get_ShowIdeasRoute\",\"summary\":\"Show ideas to improve the diagram\",\"parameters\":[{\"required\":true,\"schema\":{\"type\":\"string\"},\"name\":\"diagramLanguage\",\"in\":\"query\"},{\"required\":true,\"schema\":{\"type\":\"string\"},\"name\":\"diagramType\",\"in\":\"query\"}],\"responses\":{\"200\":{\"description\":\"Successful Response\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"interpretingAPIResponse\":{\"type\":\"string\",\"description\":\"This section comes after receiving the api response\"}}}}}}}}},\"/explore-diagrams\":{\"get\":{\"operationId\":\"get_ExploreDiagramsRoute\",\"summary\":\"Showcase diagrams that the plugin can render\",\"parameters\":[{\"description\":\"Choose 3 diagram types that the user might want to render, the 1st diagram type should be the latest rendered diagram type\",\"required\":true,\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"description\":\"Diagram type same as diagramType in diagramGuidelines\",\"example\":\"graph\"}},\"name\":\"diagramTypesToExplore\",\"in\":\"query\"}],\"responses\":{\"200\":{\"description\":\"Successful Response\",\"content\":{\"application/json\":{\"schema\":{\"type\":\"object\",\"properties\":{\"interpretingAPIResponse\":{\"type\":\"string\",\"description\":\"This section comes after receiving the api response\"}}}}}}}}}}}",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "none"
+                                },
+                                "privacy_policy_url": "https://diagrams.helpful.dev/privacy"
+                            }
+                        },
+                        {
+                            "id": "gzm_cnf_HXde2FsqO9J6ILLzW2gd3vvY~gzm_tool_QOXDiISffkCzYJAxZqA7gJSV",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-bo0FiWLY7",
+                        "organization_id": "org-HG3GDECPJ4BgdPO5epfBZfIU",
+                        "short_url": "g-bo0FiWLY7-consensus",
+                        "author": {
+                            "user_id": "user-PrioK3AN9UNCA9WGNw14PE7j",
+                            "display_name": "consensus.app",
+                            "link_to": "https://consensus.app",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": false
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Consensus",
+                            "description": "Your AI Research Assistant. Search 200M academic papers from Consensus, get science-based answers, and draft content with accurate citations.",
+                            "welcome_message": "Hello",
+                            "prompt_starters": [
+                                "Does fish oil improve mood? Use human RCTs from top journals",
+                                "Write the introduction of a paper on the effects of climate change on GDP",
+                                "Can intergroup contact reduce prejudice?",
+                                "Draft a blog on science-backed benefits of mindfulness"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-uUsDBz1ABhyOXkRiWhe5xohZ?se=2123-12-15T23%3A21%3A21Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D1209600%2C%20immutable&rscd=attachment%3B%20filename%3D2092%2520%25282%2529.png&sig=0CNjR0V7ipTUL/6R3rKszqP6mB25NOc2WjtIuDEwhrg%3D",
+                            "categories": [
+                                "research"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-13T17:23:18.114036+00:00",
+                        "updated_at": "2024-01-30T16:48:47.520177+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_BBDPvOb2tbG8bqADBl6eJyWx~gzm_tool_ejgDY4sWJYHh0ubCX3Yf0gZb",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-f1286ecb04957580332cda9bf386b57ef1b2ed6f",
+                                "domain": "chat.consensus.app",
+                                "raw_spec": "{\n  \"info\": {\n    \"title\": \"Consensus Chat GPT Plugin\",\n    \"version\": \"1.0\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://chat.consensus.app/\"\n    }\n  ],\n  \"openapi\": \"3.1.0\",\n  \"paths\": {\n    \"/quick_search\": {\n      \"get\": {\n        \"description\": \"An endpoint that can be called to ask a question of research papers\",\n        \"operationId\": \"search_papers\",\n        \"parameters\": [\n          {\n            \"description\": \"A query to find relevant research papers. Ask research questions related to scientific topics, like 'impact of climate change on GDP' or 'benefits of mindfulness meditation'. Ask broad yes/no questions, explore relationships between concepts or the effects of a concept. Use technical language to maximize the relevance to academic text. For example, if user asks 'Why does being cold make you sick?', search 'Does cold temperature exposure increase the risk of illness?'. Omit words that we have filters for such as study types and years and instead use the filters. Omit unnecessary commands like 'latest research' and 'find papers', focus only on words likely to match the text of research papers.\",\n            \"in\": \"query\",\n            \"name\": \"query\",\n            \"required\": true,\n            \"schema\": {\n              \"description\": \"A query to find relevant research papers. Ask research questions related to scientific topics, like 'impact of climate change on GDP' or 'benefits of mindfulness meditation'. Ask broad yes/no questions, explore relationships between concepts or the effects of a concept. Use technical language to maximize the relevance to academic text. For example, if user asks 'Why does being cold make you sick?', search 'Does cold temperature exposure increase the risk of illness?'. Omit words that we have filters for such as study types and years and instead use the filters. Omit unnecessary commands like 'latest research' and 'find papers', focus only on words likely to match the text of research papers.\",\n              \"title\": \"Query\",\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"description\": \"The earliest publication year to consider in the search, filtering out papers published before this year. You must only use this filter when the user asks for information after a certain date. An example of when to use this filter would be if a user asks 'show me papers about the covid vaccine published after 2020' or 'papers about immigration reform published between 2000 and 2015'. If you use this filter without the user specifically including a date or 'recent research', you will be penalized.\",\n            \"in\": \"query\",\n            \"name\": \"year_min\",\n            \"required\": false,\n            \"schema\": {\n              \"description\": \"The earliest publication year to consider in the search, filtering out papers published before this year. You must only use this filter when the user asks for information after a certain date. An example of when to use this filter would be if a user asks 'show me papers about the covid vaccine published after 2020' or 'papers about immigration reform published between 2000 and 2015'. If you use this filter without the user specifically including a date or 'recent research', you will be penalized.\",\n              \"title\": \"Year Min\",\n              \"type\": \"integer\"\n            }\n          },\n          {\n            \"description\": \"The latest publication year to consider in the search, filtering out papers published after this year. You must only use this filter when the user asks for information before a certain date. An example of when to use this filter would be if a user asks 'show me papers about the covid vaccine published before 2023' or 'papers about immigration reform published between 2000 and 2015'. Only use this filter when a specific year restriction is requested by the user\",\n            \"in\": \"query\",\n            \"name\": \"year_max\",\n            \"required\": false,\n            \"schema\": {\n              \"description\": \"The latest publication year to consider in the search, filtering out papers published after this year. You must only use this filter when the user asks for information before a certain date. An example of when to use this filter would be if a user asks 'show me papers about the covid vaccine published before 2023' or 'papers about immigration reform published between 2000 and 2015'. Only use this filter when a specific year restriction is requested by the user\",\n              \"title\": \"Year Max\",\n              \"type\": \"integer\"\n            }\n          },\n          {\n            \"description\": \"List of study types to include in the search, such as RCT, Meta-Analysis, Systematic Review, Observational Study, Case Report etc. You must only use this filter when the user asks for information from papers with certain study designs. Examples of when to use this filter would be if a user asks 'does zinc help with depression? show me responses from RCTs' or 'I need to find a systematic review on the effects of spanking on children'. Only use this filter when a specific study type is asked about\",\n            \"in\": \"query\",\n            \"name\": \"study_types\",\n            \"required\": false,\n            \"schema\": {\n              \"default\": [],\n              \"description\": \"List of study types to include in the search, such as RCT, Meta-Analysis, Systematic Review, Observational Study, Case Report etc. You must only use this filter when the user asks for information from papers with certain study designs. Examples of when to use this filter would be if a user asks 'does zinc help with depression? show me responses from RCTs' or 'I need to find a systematic review on the effects of spanking on children'. Only use this filter when a specific study type is asked about\",\n              \"items\": {\n                \"$ref\": \"#/components/schemas/StudyTypeKeywordEnum\"\n              },\n              \"type\": \"array\"\n            }\n          },\n          {\n            \"description\": \"Set to true to limit the search to studies involving human subjects. You must only use this filter if the users asks for information from human studies. An example of when to use this filter would be if a user asks 'what are the effects of magnesium on sleep? only show me studies conducted on humans'. Only use this filter when it is specifically asked for by the user\",\n            \"in\": \"query\",\n            \"name\": \"human\",\n            \"required\": false,\n            \"schema\": {\n              \"description\": \"Set to true to limit the search to studies involving human subjects. You must only use this filter if the users asks for information from human studies. An example of when to use this filter would be if a user asks 'what are the effects of magnesium on sleep? only show me studies conducted on humans'. Only use this filter when it is specifically asked for by the user\",\n              \"title\": \"Human\",\n              \"type\": \"boolean\"\n            }\n          },\n          {\n            \"description\": \"The minimum sample size of the studies to include in the search, targeting studies with a larger participant base. You must only use this filter when the user asks for studies with a large sample size or over a certain number of participants. An example of when to use this filter would be if a user asks 'what are the effects of magnesium on sleep? only show me studies with large sample sizes' in this case set the filter to ~100. Only use this filter when it is specifically asked for by the user\",\n            \"in\": \"query\",\n            \"name\": \"sample_size_min\",\n            \"required\": false,\n            \"schema\": {\n              \"description\": \"The minimum sample size of the studies to include in the search, targeting studies with a larger participant base. You must only use this filter when the user asks for studies with a large sample size or over a certain number of participants. An example of when to use this filter would be if a user asks 'what are the effects of magnesium on sleep? only show me studies with large sample sizes' in this case set the filter to ~100. Only use this filter when it is specifically asked for by the user\",\n              \"title\": \"Sample Size Min\",\n              \"type\": \"integer\"\n            }\n          },\n          {\n            \"description\": \"The maximum SJR quartile (1-4) of the journals to include. This helps set a threshold for journal prestige, where 1 is the highest quartile. You must only use this filter when the user asks for information from higher-ranked journals. An example of when to use this filter would be if a user asks 'Produce me a rrl on interest rates in the economy only from the best journals' in this case set the fiter to 1. Only use this filter when it is specficially asked for by the user\",\n            \"in\": \"query\",\n            \"name\": \"sjr_max\",\n            \"required\": false,\n            \"schema\": {\n              \"description\": \"The maximum SJR quartile (1-4) of the journals to include. This helps set a threshold for journal prestige, where 1 is the highest quartile. You must only use this filter when the user asks for information from higher-ranked journals. An example of when to use this filter would be if a user asks 'Produce me a rrl on interest rates in the economy only from the best journals' in this case set the fiter to 1. Only use this filter when it is specficially asked for by the user\",\n              \"title\": \"Sjr Max\",\n              \"type\": \"integer\"\n             }\n          }\n        ],\n        \"responses\": {\n          \"200\": {\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/QuickSearchResponse\"\n                }\n              }\n            },\n            \"description\": \"Successful Response\"\n          },\n          \"422\": {\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/HTTPValidationError\"\n                }\n              }\n            },\n            \"description\": \"Validation Error\"\n          }\n        },\n        \"security\": [\n          {\n            \"HTTPBearer\": []\n          }\n        ],\n        \"summary\": \"Returns research papers related to a question or query. Each result contains, title, abstract, authors, year, and journal.\",\n        \"tags\": [\n          \"search\"\n        ]\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {\n      \"HTTPValidationError\": {\n        \"properties\": {\n          \"detail\": {\n            \"items\": {\n              \"$ref\": \"#/components/schemas/ValidationError\"\n            },\n            \"title\": \"Detail\",\n            \"type\": \"array\"\n          }\n        },\n        \"title\": \"HTTPValidationError\",\n        \"type\": \"object\"\n      },\n      \"QuickSearchResponse\": {\n        \"properties\": {\n          \"items\": {\n            \"description\": \"All answers to the question.\",\n            \"items\": {\n              \"$ref\": \"#/components/schemas/QuickSearchResponseItem\"\n            },\n            \"title\": \"Items\",\n            \"type\": \"array\"\n          }\n        },\n        \"required\": [\n          \"items\"\n        ],\n        \"title\": \"QuickSearchResponse\",\n        \"type\": \"object\"\n      },\n      \"QuickSearchResponseItem\": {\n        \"properties\": {\n          \"abstract\": {\n            \"description\": \"The abstract of the paper.\",\n            \"title\": \"Abstract\",\n            \"type\": \"string\"\n          },\n          \"consensus_paper_details_url\": {\n            \"description\": \"A URL with more details on the paper.\",\n            \"title\": \"Consensus Paper Details Url\",\n            \"type\": \"string\"\n          },\n          \"doi\": {\n            \"description\": \"Digital Object Identifier, a unique alphanumeric string assigned to a document for permanent access.\",\n            \"title\": \"Doi\",\n            \"type\": \"string\"\n          },\n          \"pages\": {\n            \"description\": \"The page range of the paper within the journal volume.\",\n            \"title\": \"Pages\",\n            \"type\": \"string\"\n          },\n          \"paper_authors\": {\n            \"description\": \"A list of authors of the paper.\",\n            \"items\": {\n              \"type\": \"string\"\n            },\n            \"title\": \"Paper Authors\",\n            \"type\": \"array\"\n          },\n          \"paper_publish_year\": {\n            \"description\": \"The year the paper was published.\",\n            \"title\": \"Paper Publish Year\",\n            \"type\": \"integer\"\n          },\n          \"paper_title\": {\n            \"description\": \"Title of the paper where the answer was found\",\n            \"title\": \"Paper Title\",\n            \"type\": \"string\"\n          },\n          \"publication_journal_name\": {\n            \"description\": \"The journal the paper was published in.\",\n            \"title\": \"Publication Journal Name\",\n            \"type\": \"string\"\n          },\n          \"search_result_number\": {\n            \"description\": \"The rank of the paper in the search results.\",\n            \"title\": \"Search Result Number\",\n            \"type\": \"integer\"\n          },\n          \"volume\": {\n            \"description\": \"The volume of the journal in which the paper appears.\",\n            \"title\": \"Volume\",\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"paper_title\",\n          \"abstract\",\n          \"paper_authors\",\n          \"paper_publish_year\",\n          \"publication_journal_name\",\n          \"consensus_paper_details_url\",\n          \"doi\",\n          \"volume\",\n          \"pages\",\n          \"search_result_number\"\n        ],\n        \"title\": \"QuickSearchResponseItem\",\n        \"type\": \"object\"\n      },\n\"StudyTypeKeywordEnum\": {\n        \"description\": \"All possible study types strings saved to search index documents.\",\n        \"type\": \"string\",\n        \"enum\": [\n          \"literature review\",\n          \"systematic review\",\n          \"case report\",\n          \"meta-analysis\",\n          \"rct\",\n          \"non-rct in vitro\",\n          \"non-rct experimental\",\n          \"non-rct other\",\n          \"non-rct observational study\",\n          \"animal\"\n        ],\n        \"title\": \"StudyTypeKeywordEnum\"\n      },\n      \"ValidationError\": {\n        \"properties\": {\n          \"loc\": {\n            \"items\": {\n              \"anyOf\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"integer\"\n                }\n              ]\n            },\n            \"title\": \"Location\",\n            \"type\": \"array\"\n          },\n          \"msg\": {\n            \"title\": \"Message\",\n            \"type\": \"string\"\n          },\n          \"type\": {\n            \"title\": \"Error Type\",\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"loc\",\n          \"msg\",\n          \"type\"\n        ],\n        \"title\": \"ValidationError\",\n        \"type\": \"object\"\n      }\n    },\n    \"securitySchemes\": {\n      \"HTTPBearer\": {\n        \"scheme\": \"bearer\",\n        \"type\": \"http\"\n      }\n    }\n  }\n}",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "service_http",
+                                    "instructions": "",
+                                    "authorization_type": "bearer",
+                                    "verification_tokens": {},
+                                    "custom_auth_header": ""
+                                },
+                                "privacy_policy_url": "https://consensus.app/home/privacy-policy/"
+                            }
+                        },
+                        {
+                            "id": "gzm_cnf_yTPzzLFXgSBGs9PL6WNTPRm1~gzm_tool_5zC6dkAtBSmNXBDUPr2MBYAk",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_yTPzzLFXgSBGs9PL6WNTPRm1~gzm_tool_ImQDvlKmvFKBMC4UEzvZtJXf",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_yTPzzLFXgSBGs9PL6WNTPRm1~gzm_tool_ii3n7IaRU6HBMJsKQQfNUuvb",
+                            "type": "python",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-gFFsdkfMC",
+                        "organization_id": "org-9VfDCrrCmckEWd4iOegZrQUw",
+                        "short_url": "g-gFFsdkfMC-cartoonize-yourself",
+                        "author": {
+                            "user_id": "user-GsrmFxnwdhzKPBumBHe4oeR1",
+                            "display_name": "karenxcheng.com",
+                            "link_to": "https://karenxcheng.com",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": null
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Cartoonize Yourself",
+                            "description": "Turns photos into Pixar-style illustrations. Upload your photo to try",
+                            "welcome_message": "Welcome! Upload a photo and I'll transform it into a Pixar-style masterpiece.",
+                            "prompt_starters": [
+                                "Upload a photo for a Pixar transformation",
+                                "Show me your pet for a Pixar-style drawing",
+                                "Transform my selfie into Pixar art",
+                                "Create a Pixar-style portrait from this picture"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-bUZE1j8Ld1SJq9wEeJDfRGuM?se=2123-11-03T02%3A43%3A43Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D980728ef-7d57-4b4c-b0a5-dcf9e00676e9.png&sig=JT%2BynnJL4ai6H70cscNUpbO63WcvWtxZVZMFY2L3gag%3D",
+                            "categories": [
+                                "other"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-27T01:44:54.013106+00:00",
+                        "updated_at": "2024-01-30T07:00:44.788793+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_Hn8QYSwFjdS8sAaKnfLLMxdX~gzm_tool_1H4a5J5AaZak48of2onguVad",
+                            "type": "python",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_Hn8QYSwFjdS8sAaKnfLLMxdX~gzm_tool_seq0HqAWw6jV1XVncNtdAMoS",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_Hn8QYSwFjdS8sAaKnfLLMxdX~gzm_tool_4Yt2yKQ7AbsdNZBBdxq0WCxt",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-Hkqnd7mFT",
+                        "organization_id": "org-IdM5qZ5IEb9xXq6UIIbO9A96",
+                        "short_url": "g-Hkqnd7mFT-video-gpt-by-veed",
+                        "author": {
+                            "user_id": "user-Y6WNzYQvjVMl3aTadCg7AW4g",
+                            "display_name": "veed.io",
+                            "link_to": "https://veed.io",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": false
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Video GPT by VEED",
+                            "description": "AI Video Maker. Generate videos for social media - YouTube, Instagram, TikTok and more! Free text to video & speech tool with AI Avatars, TTS, music, and stock footage.",
+                            "welcome_message": "Hi! Let's create your VEED video project.",
+                            "prompt_starters": [
+                                "Let's create a video!",
+                                "AI text to speech",
+                                "Create AI Avatar video",
+                                "Learn more about VEED"
+                            ],
+                            "profile_pic_id": "file-SlTJOEwrBwlAnMgwOzlWyFUp",
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-SlTJOEwrBwlAnMgwOzlWyFUp?se=2123-12-29T14%3A58%3A36Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D1209600%2C%20immutable&rscd=attachment%3B%20filename%3Dai%2520text%2520to%2520video%2520for%2520social%2520media.png&sig=81ayZwF3xkQIU9h5SLyC2Dfka1emcCCu8814lHfXhjc%3D",
+                            "categories": [
+                                "productivity"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-14T11:54:59.742888+00:00",
+                        "updated_at": "2024-01-30T20:02:27.536294+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_jRPnl9tbwXg9TJ90uQPGNfjr~gzm_tool_yDvqAd24DZgU22BFvcdcrCyc",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_IvucRriG6lWexd5BlZFD0fgO~gzm_tool_vHMwHHn88wCRt1n9YCHPRBVT",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-e6bc9db6c7ec5e23b4d2e6e89fbdf31a9678ed6d",
+                                "domain": "www.veed.io",
+                                "raw_spec": "{\n  \"openapi\": \"3.1.0\",\n  \"info\": {\n    \"title\": \"VEED Text to Video API\",\n    \"description\": \"The VEED Text to Video API API is used to create VEED projects using AI-generated scripts, titles, text-to-speech, background music and stock footage.\",\n    \"version\": \"v1.0.0\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://www.veed.io/text-to-video-ap/api\"\n    }\n  ],\n  \"paths\": {\n    \"/generate/async\": {\n      \"post\": {\n        \"description\": \"Using a prompt OR script AND voice OR avatar, generate a VEED video project\",\n        \"operationId\": \"GenerateProject\",\n        \"x-openai-isConsequential\": false,\n        \"requestBody\": {\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \"prompt\": {\n                    \"description\": \"Prompt that is used to generate a video script if `script` is not provided\",\n                    \"type\": \"string\"\n                  },\n                  \"script\": {\n                    \"description\": \"The video script of the generated video if `prompt` is not provided\",\n                    \"type\": \"string\"\n                  },\n                  \"voice\": {\n                    \"description\": \"Type of voice used for the voiceover if `avatar` is not provided\",\n                    \"type\": \"string\",\n                    \"enum\": [\"male\", \"female\"]\n                  },\n                  \"avatar\": {\n                    \"description\": \"The avatar used in the generated video if `voice` is not provided\",\n                    \"type\": \"string\",\n                    \"enum\": [\"avery\", \"isabella\", \"lily\", \"devon\", \"noah\", \"mateo\"]\n                  }\n                },\n                \"additionalProperties\": false\n              }\n            }\n          }\n        },\n        \"responses\": {\n          \"200\": {\n            \"description\": \"Expected response to a valid request\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Project\"\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {\n      \"Project\": {\n        \"description\": \"A VEED project\",\n        \"properties\": {\n          \"prompt\": {\n            \"type\": \"string\"\n          },\n          \"project\": {\n            \"type\": \"object\",\n            \"required\": [\"id\", \"name\", \"link\", \"thumbnail\"],\n            \"properties\": {\n              \"id\": {\n                \"type\": \"string\",\n                \"format\": \"uuid\"\n              },\n              \"title\": {\n                \"description\": \"The title of the video\",\n                \"type\": \"string\"\n              },\n              \"link\": {\n                \"description\": \"URL to edit the project in the VEED editor\",\n                \"type\": \"string\",\n                \"format\": \"uri\"\n              },\n              \"thumbnail\": {\n                \"description\": \"Thumbnail image for the video\",\n                \"type\": \"string\",\n                \"format\": \"uri\"\n              }\n            }\n          }\n        },\n        \"type\": \"object\",\n        \"required\": [\"prompt\", \"project\"]\n      }\n    }\n  }\n}",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "none"
+                                },
+                                "privacy_policy_url": "https://www.veed.io/privacy"
+                            }
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-B3hgivKK9",
+                        "organization_id": "org-Lhg5UuxewxUamqjwDCtrkn4V",
+                        "short_url": "g-B3hgivKK9-write-for-me",
+                        "author": {
+                            "user_id": "user-qcK7n3IbKhYmu4dSv3kkiut3",
+                            "display_name": "puzzle.today",
+                            "link_to": "https://puzzle.today",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": true
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Write For Me",
+                            "description": "Write tailored, engaging content with a focus on quality, relevance and precise word count.",
+                            "welcome_message": "How can I assist with your content needs today?",
+                            "prompt_starters": [
+                                "Write me a 1000 word analysis on the future of GPT.",
+                                "Write me a 200 word product description for a red screwdriver. ",
+                                "Write a 3000 word blog about the future of SEO if ChatGPT kills search engines.",
+                                "Write a five paragraph essay on brutalist architecture. "
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-hVjI65nZeCAowpoArhSWjynX?se=2123-10-24T11%3A26%3A42Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Ded9312a8-bf37-4345-93bd-2e8b54bc2a89.png&sig=nw8OKVAhe0pqBOvG8jlopI5cQ2npVyuHjAjSpr%2BWKFo%3D",
+                            "categories": []
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-17T11:08:46.422186+00:00",
+                        "updated_at": "2024-01-30T20:02:27.996712+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_beABKP0vR5FARysR0QswD9C4~gzm_tool_eBRCdiC28TzmkmlcEMJNgBsx",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_beABKP0vR5FARysR0QswD9C4~gzm_tool_SaLuHtCItvhOrZYHSWBVpQt2",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_beABKP0vR5FARysR0QswD9C4~gzm_tool_tS7qT03d0NGlMlo5MFC0ozB7",
+                            "type": "python",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-hcqdAuSMv",
+                        "organization_id": "org-CPFoSyGjImiKAPtCqlEmt1zM",
+                        "short_url": "g-hcqdAuSMv-kayak-flights-hotels-cars",
+                        "author": {
+                            "user_id": "user-Kpr6pjgHr7YWOF6mzm9uDs3L",
+                            "display_name": "kayak.com",
+                            "link_to": "https://kayak.com",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": true
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "KAYAK - Flights, Hotels & Cars",
+                            "description": "Your travel planning assistant for flights, hotels, & cars",
+                            "welcome_message": "Hello! Where are we heading today? Let's start planning your journey.",
+                            "prompt_starters": [
+                                "How much is a boutique hotel in New York?",
+                                "When's the best time to travel to Tokyo in summer?",
+                                "How much does it cost to fly to San Francisco?",
+                                "Where can I travel for $500?"
+                            ],
+                            "profile_pic_id": null,
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-SB3uThCh1QuhmqNoQ4OjHxLd?se=2123-10-16T20%3A27%3A07Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dkayak-mark-1024.png&sig=DI34ROkQUJFbNlh2KS%2BWY6w0DibnYtU%2BOfofYGu/6c4%3D",
+                            "categories": [
+                                "lifestyle"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-09T19:59:19.155152+00:00",
+                        "updated_at": "2024-01-30T07:01:29.694646+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_f4v8gH6zbSufKAkLtPmU7bjN~gzm_tool_W4IBo3vb7Go4SyuznAW2Q5xv",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-b876729938112539eae03ae20d4c58832ee787a6",
+                                "domain": "www.kayak.com",
+                                "raw_spec": "openapi: 3.0.1\ninfo:\n  title: KAYAK - Flights, Hotels, Cars\n  description: A plugin that allows users to search for the best deals on flights, hotels and cars\n  version: v1\nservers:\n  - url: https://www.kayak.com\npaths:\n  /sherlock/aiplugin/search/flights:\n    post:\n      operationId: searchFlights\n      x-openai-isConsequential: false\n      summary: Search flights on a flight route for certain dates\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/searchFlightsRequest\"\n      parameters:\n        - name: format\n          in: query\n          required: true\n          schema:\n            type: string\n            default: json\n          description: The format of the response.\n      responses:\n        \"200\":\n          description: OK\n        \"429\":\n          description: Rate limited\n  /sherlock/aiplugin/search/stays:\n    post:\n      operationId: searchStays\n      x-openai-isConsequential: false\n      summary: Search stays for certain dates\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/searchStaysRequest\"\n      parameters:\n        - name: format\n          in: query\n          required: true\n          schema:\n            type: string\n            default: json\n          description: The format of the response.  \n      responses:\n        \"200\":\n          description: OK\n        \"429\":\n          description: Rate limited\n  /sherlock/aiplugin/search/cars:\n    post:\n      operationId: searchCars\n      x-openai-isConsequential: false\n      summary: Search rental cars for certain dates\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/searchCarsRequest\"\n      parameters:\n        - name: format\n          in: query\n          required: true\n          schema:\n            type: string\n            default: json\n          description: The format of the response.\n      responses:\n        \"200\":\n          description: OK\n        \"429\":\n          description: Rate limited\n  /sherlock/aiplugin/explore:\n    post:\n      operationId: explore\n      x-openai-isConsequential: false\n      summary: Find places to go on a budget. This endpoint will return destinations that can be reached by plane within the\n        given budget.\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/exploreRequest\"\n      parameters:\n        - name: format\n          in: query\n          required: true\n          schema:\n            type: string\n            default: json\n          description: The format of the response.\n      responses:\n        \"200\":\n          description: OK\n        \"429\":\n          description: Rate limited\n  /sherlock/aiplugin/insights/flights:\n    post:\n      operationId: flightInsights\n      x-openai-isConsequential: false\n      summary: This endpoint can be used when the flight route is known yet the travel dates are flexible. For example a user\n        may say they want to travel for 2 weeks whenever air fares are the lowest. Another example is that a user\n        specifies a travel month without exact dates.\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/flightInsightsRequest\"\n      parameters:\n        - name: format\n          in: query\n          required: true\n          schema:\n            type: string\n            default: json\n          description: The format of the response.\n      responses:\n        \"200\":\n          description: OK\n        \"429\":\n          description: Rate limited\ncomponents:\n  schemas:\n    searchFlightsRequest:\n      type: object\n      required:\n        - destination\n        - departDate\n      properties:\n        origin:\n          type: string\n          description: The origin from which the flight starts. Will be approximated if not specified.\n        destination:\n          type: string\n          description: The destination to which the flight goes\n        departDate:\n          type: string\n          format: date\n          description: Departure date of the flight at the origin\n        departHourRange:\n          type: array\n          items:\n            type: integer\n          description: Range of hours in between which the outgoing flight should depart. Hours between 0 and 23, ranges such as\n            [12,14]. Only needed when a specific flight departure time is requested.\n        returnDate:\n          type: string\n          format: date\n          description: Return date of the flight. Only required for round trip flights\n        returnHourRange:\n          type: array\n          items:\n            type: integer\n          description: Range of hours in between which the return flight should depart. Hours between 0 and 23, ranges such as\n            [12,14]. Only needed when a specific return flight departure time is requested.\n        cabinClass:\n          type: string\n          description: Flight cabin class. Defaults to Economy class if not specified.\n          enum:\n            - economy\n            - premium_economy\n            - business\n            - first\n        numAdults:\n          type: integer\n          description: Number of adults that are flying\n        numChildren:\n          type: integer\n          description: Number of children that are flying\n        nonStopOnly:\n          type: boolean\n          description: Only show non-stop flights\n        preferredCarriers:\n          type: array\n          items:\n            type: string\n          description: Optional list of airlines that are preferred.\n        excludeCarriers:\n          type: array\n          items:\n            type: string\n          description: Optional list of airlines that should be avoided.\n    searchStaysRequest:\n      type: object\n      required:\n        - destination\n        - checkinDate\n        - checkoutDate\n      properties:\n        destination:\n          type: string\n          description: The city where you need a stay\n        hotelName:\n          type: string\n          description: Name of the specific hotel for which the user wants to search. Optional only required when a specific hotel\n            is requested.\n        landmark:\n          type: string\n          description: Optional landmark to refine the location\n        neighborhood:\n          type: string\n          description: Optional neighborhood to refine the location\n        address:\n          type: string\n          description: Optional address to refine the location\n        checkinDate:\n          type: string\n          format: date\n          description: Check in date\n        checkoutDate:\n          type: string\n          format: date\n          description: Check out date\n        numAdults:\n          type: integer\n          description: Number of adults that are staying.\n        numChildren:\n          type: integer\n          description: Number of children that are staying\n        numRooms:\n          type: integer\n          description: Number of rooms needed\n        minNumStars:\n          type: integer\n          description: Minimum number of stars the accommodation should have\n        specialRequest:\n          type: string\n          description: Any question or preference related to the accommodation for which we have no explicit query parameters.\n        preferredAmenities:\n          type: array\n          items:\n            $ref: \"#/components/schemas/hotelAmenity\"\n          description: |\n            Specify one or many amenities that the accommodation should offer: \n            - spa: Spa\n            - pool: Pool\n            - pet_friendly: Pet-friendly\n            - beach_front: At the beach front\n            - fitness_center: Fitness center\n            - kitchen: Kitchen\n            - parking: Parking\n            - adult_only: Adult-only accommodation\n            - wifi: Wi-Fi\n            - ev_charger: Charger for electric vehicles\n            - facilities_disabled_guests: Facilities for guests with disabilities\n            - elevator: Elevator\n        preferredFreebies:\n          type: array\n          items:\n            $ref: \"#/components/schemas/hotelFreebie\"\n          description: |\n            Specify one or many freebies that should be included in the room rate:\n            - free_cancellation: Rate includes free cancellation\n            - free_breakfast: Rate includes breakfast\n            - free_internet: Rate includes free Internet access\n            - all_inclusive: All-inclusive rate\n        preferredClassifications:\n          type: array\n          items:\n            $ref: \"#/components/schemas/hotelClassification\"\n          description: >\n            Specify one or many classifications that allow us to understand better what kind of experience the user is\n            looking for:\n\n            - bed_and_breakfast: Bed and breakfast\n\n            - motel: Motel\n\n            - inn: Inn\n\n            - capsule_hotel: Capsule hotel\n\n            - apartment: Apartment\n\n            - villa: Villa\n\n            - ryokan: Ryokan\n\n            - hostel: Hostel\n\n            - cottage: Cottage\n\n            - holiday_home: Holiday home\n        preferredAmbiances:\n          type: array\n          items:\n            $ref: \"#/components/schemas/hotelAmbiance\"\n          description: >\n            Specify one or many ambiances that allow us to understand better what kind of experience the user is looking\n            for:\n\n            - boutique: Boutique hotel\n\n            - budget: Hotels that are budget-friendly\n\n            - romantic: Hotels suited for romantic trips\n\n            - historic: Hotels with a historic character\n\n            - family_friendly: Family-friendly accommodations\n    searchCarsRequest:\n      type: object\n      required:\n        - origin\n        - pickupDate\n        - dropoffDate\n      properties:\n        origin:\n          type: string\n          description: The location where you want to pick your rental car\n        destination:\n          type: string\n          description: The location where you want to drop off your rental car. Will take the origin if no other location is given.\n        pickupDate:\n          type: string\n          format: date\n          description: The date when you want to pick up your rental car\n        pickupHour:\n          type: integer\n          description: Rental car pick up hour in 24-hour format. Optional parameter that defaults to noon.\n        dropoffDate:\n          type: string\n          format: date\n          description: The date when you want to drop off your rental car\n        dropoffHour:\n          type: integer\n          description: Rental car drop off hour in 24-hour format. Optional parameter that defaults to noon.\n    exploreRequest:\n      type: object\n      properties:\n        origin:\n          type: string\n          description: The origin from which the flight starts. Will be approximated if not specified.\n        destinationHints:\n          type: array\n          items:\n            type: string\n          description: Optional list of cities that are requested to be included in the results, if prices are available.\n        departDate:\n          type: string\n          format: date\n          description: Departure date of the flight at the origin\n        returnDate:\n          type: string\n          format: date\n          description: Return date of the flight. Must be specified when a departure date is given.\n        budgetUsd:\n          type: integer\n          description: Expected cost of round trip flight ticket for one person\n        nonStopOnly:\n          type: boolean\n          description: Only show non-stop flights\n        useExactDates:\n          type: boolean\n          description: Set to true if travel on specific dates is requested. The default is flexible travel within a time period.\n        minDays:\n          type: integer\n          description: Minimum duration that the suggested trips should have. Expressed in the number of days\n        maxDays:\n          type: integer\n          description: Maximum duration that the suggested trips should have. Expressed in the number of days\n    flightInsightsRequest:\n      type: object\n      required:\n        - destination\n        - departDate\n      properties:\n        origin:\n          type: string\n          description: The origin from which the flight starts. Will be approximated if not specified.\n        destination:\n          type: string\n          description: The destination to which the flight goes\n        departDate:\n          type: string\n          format: date\n          description: Departure date of the flight at the origin\n        returnDate:\n          type: string\n          format: date\n          description: Return date of the flight. Only required for round trip flights\n        nonStopOnly:\n          type: boolean\n          description: Only show non-stop pricing if non-stop flights are available on the requested route\n    hotelAmenity:\n      type: string\n      enum:\n        - spa\n        - pool\n        - pet_friendly\n        - beach_front\n        - fitness_center\n        - kitchen\n        - parking\n        - adult_only\n        - wifi\n        - ev_charger\n        - facilities_disabled_guests\n        - elevator\n    hotelFreebie:\n      type: string\n      enum:\n        - free_cancellation\n        - free_breakfast\n        - free_internet\n        - all_inclusive\n    hotelClassification:\n      type: string\n      enum:\n        - bed_and_breakfast\n        - motel\n        - inn\n        - capsule_hotel\n        - apartment\n        - villa\n        - ryokan\n        - hostel\n        - cottage\n        - holiday_home\n    hotelAmbiance:\n      type: string\n      enum:\n        - boutique\n        - budget\n        - romantic\n        - historic\n        - family_friendly\n",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "service_http",
+                                    "instructions": "",
+                                    "authorization_type": "bearer",
+                                    "verification_tokens": {},
+                                    "custom_auth_header": ""
+                                },
+                                "privacy_policy_url": "https://www.kayak.com/privacy"
+                            }
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            },
+            {
+                "resource": {
+                    "gizmo": {
+                        "id": "g-2azCVmXdy",
+                        "organization_id": "org-dVp3SlijZF2EyjK9dxplnuVn",
+                        "short_url": "g-2azCVmXdy-humanizer-pro",
+                        "author": {
+                            "user_id": "user-LfH5gS5D7s5RMBHWOJ8qd3DT",
+                            "display_name": "charlygpts.com",
+                            "link_to": "https://charlygpts.com",
+                            "selected_display": "website",
+                            "is_verified": true,
+                            "will_receive_support_emails": true
+                        },
+                        "voice": {
+                            "id": "ember"
+                        },
+                        "workspace_id": null,
+                        "model": null,
+                        "instructions": null,
+                        "settings": null,
+                        "display": {
+                            "name": "Humanizer Pro",
+                            "description": "#1 Humanizer in the market. Writes text like a human, avoiding AI detection. This tool humanizes your content to bypass the most advanced AI detectors, mantaining content meaning and quality. **New update available**",
+                            "welcome_message": "Hello! Ready to write naturally together?",
+                            "prompt_starters": [
+                                "⬇️ PASTE THE TEXT YOU WANT TO HUMANIZE ⬇️",
+                                "We recommend inserting < 1000 words texts"
+                            ],
+                            "profile_pic_id": "file-B3J9SZ6f8uh21XyDgNJ236pg",
+                            "profile_picture_url": "https://files.oaiusercontent.com/file-B3J9SZ6f8uh21XyDgNJ236pg?se=2123-10-22T14%3A41%3A35Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D579a0db4-4eef-4846-98f7-ff2979eb942e.webp&sig=xs2Th9HWsBkW5G60Vp90UmCc/QeGOrRXjF4XhcPHwhw%3D",
+                            "categories": [
+                                "writing"
+                            ]
+                        },
+                        "share_recipient": "marketplace",
+                        "created_at": "2023-11-15T14:14:36.022505+00:00",
+                        "updated_at": "2024-01-30T20:00:36.132347+00:00",
+                        "last_interacted_at": null,
+                        "num_interactions": null,
+                        "tags": [
+                            "public",
+                            "reportable",
+                            "uses_function_calls"
+                        ],
+                        "version": null,
+                        "live_version": null,
+                        "training_disabled": null,
+                        "sharing_targets": null,
+                        "appeal_info": null,
+                        "vanity_metrics": {
+                            "num_conversations": null,
+                            "num_conversations_str": null,
+                            "num_pins": 0,
+                            "created_ago_str": null,
+                            "review_stats": null
+                        },
+                        "workspace_approval_date": null,
+                        "workspace_approved": null
+                    },
+                    "tools": [
+                        {
+                            "id": "gzm_cnf_fsobWOQwWJSYZocr1hw4n7IT~gzm_tool_N09ltVQ8WQfrEwaEQPl32DnQ",
+                            "type": "dalle",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_fsobWOQwWJSYZocr1hw4n7IT~gzm_tool_zhDbZBCnimAGQ2ClqaRFlgRu",
+                            "type": "browser",
+                            "settings": null,
+                            "metadata": null
+                        },
+                        {
+                            "id": "gzm_cnf_smadVa4e15FVVVmemBHu2zrE~gzm_tool_HxoePGVOIg1X34knmaXl22qH",
+                            "type": "plugins_prototype",
+                            "settings": null,
+                            "metadata": {
+                                "action_id": "g-6c0b6204d369364e23ae19b220d6eb0df3c71fcb",
+                                "domain": "plugin.gptinf.com",
+                                "raw_spec": "openapi: 3.0.1\ninfo:\n  title: GPTinf Plugin\n  description: A plugin to humanize AI content by paraphrasing.\n  version: v1\nservers:\n  - url: https://plugin.gptinf.com/api\npaths:\n  /paraphrase:\n    post:\n      operationId: paraphrase\n      summary: Paraphrase a text\n      requestBody:\n        required: true\n        content:\n          application/json:\n            schema:\n              $ref: \"#/components/schemas/paraphraseRequest\"\n      responses:\n        \"200\":\n          description: OK\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/paraphraseResponse\"\n        \"400\":\n          description: Bad Request\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/errorResponse\"\ncomponents:\n  schemas:\n    paraphraseRequest:\n      type: object\n      required:\n        - text\n      properties:\n        text:\n          type: string\n          description: The text to paraphrase.\n    paraphraseResponse:\n      type: object\n      required:\n        - paraphrased\n      properties:\n        paraphrased:\n          type: string\n          description: The successful paraphrase of the text. Or request to increase the words limit.\n    errorResponse:\n      type: object\n      required:\n        - error\n      properties:\n        error:\n          type: string\n          description: Description of the error.",
+                                "json_schema": null,
+                                "auth": {
+                                    "type": "oauth",
+                                    "instructions": "",
+                                    "client_url": "https://plugin.gptinf.com/api/oauth",
+                                    "scope": "",
+                                    "authorization_url": "https://plugin.gptinf.com/api/oauth_exchange",
+                                    "authorization_content_type": "application/x-www-form-urlencoded",
+                                    "verification_tokens": {},
+                                    "pkce_required": false,
+                                    "token_exchange_method": "default_post"
+                                },
+                                "privacy_policy_url": "https://app.gptinf.com/privacy_policy.html"
+                            }
+                        },
+                        {
+                            "id": "gzm_cnf_fsobWOQwWJSYZocr1hw4n7IT~gzm_tool_KTOwOFlroR5LlJF3NUnp4QCg",
+                            "type": "python",
+                            "settings": null,
+                            "metadata": null
+                        }
+                    ],
+                    "files": [],
+                    "product_features": {
+                        "attachments": {
+                            "type": "retrieval",
+                            "accepted_mime_types": [
+                                "application/json",
+                                "text/x-php",
+                                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                "text/markdown",
+                                "text/plain",
+                                "text/x-tex",
+                                "application/msword",
+                                "text/x-sh",
+                                "text/javascript",
+                                "text/x-ruby",
+                                "text/html",
+                                "text/x-java",
+                                "text/x-c",
+                                "application/pdf",
+                                "text/x-c++",
+                                "text/x-typescript",
+                                "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                "text/x-csharp",
+                                "text/x-script.python",
+                                "application/x-latext"
+                            ],
+                            "image_mime_types": [
+                                "image/jpeg",
+                                "image/gif",
+                                "image/webp",
+                                "image/png"
+                            ],
+                            "can_accept_all_mime_types": true
+                        }
+                    }
+                }
+            }
+        ],
+        "cursor": "10"
+    }
+}
