@@ -13,6 +13,17 @@ targets = ['https://chat.openai.com/public-api/gizmos/discovery/trending',
 'https://chat.openai.com/public-api/gizmos/discovery/education',
 'https://chat.openai.com/public-api/gizmos/discovery/lifestyle']
 
+title_desc = {"Top Picks": "Most popular GPTs by GPT Store community",
+"Research & Analysis": "Find, evaluate, interpret, and visualize information",
+"DALL·E": "Transform your ideas into amazing images",
+"Writing": "Enhance your writing with tools for creation, editing, and style refinement",
+"Productivity": "Increase your efficiency",
+"Programming": "Write code, debug, test, and learn",
+"Education": "Explore new ideas, revisit existing skills",
+"Lifestyle": "Get tips on travel, workouts, style, food, and more"}
+
+featured = r"https://chat.openai.com/public-api/gizmos/discovery"
+
 def get_trending_data(url):
     time.sleep(5)
     params = {
@@ -31,15 +42,45 @@ def get_trending_data(url):
     else:
         return None
 
-
-
 raw_data = []
 
-content = "# Today's Trending\n\n"
+content = """
+# Today's Trending\n
+- [Featured](#featured)
+- [Top Picks](#top-picks)
+- [Research \& Analysis](#research--analysis)
+- [DALL·E](#dalle)
+- [Writing](#writing)
+- [Productivity](#productivity)
+- [Programming](#programming)
+- [Education](#education)
+- [Lifestyle](#lifestyle)\n\n
+"""
 
 # generate folder :yyyy-mm-dd
 folder = time.strftime("%Y-%m-%d", time.localtime())
-os.mkdir(folder)
+if not os.path.exists(folder):
+    os.mkdir(folder)
+
+# get featured data
+data = get_trending_data(featured)
+
+if data:
+    json_data = json.loads(data)
+    gpts = json_data['cuts'][0]
+    # maintain raw data
+    gpts['type'] = 'Featured'
+    raw_data.append(gpts)
+
+    # tranfsorm to markdown format
+    content += '## Featured\n'
+    content += '> Curated top picks from this week\n'
+    for item in gpts['list']['items']:
+        name = item['resource']['gizmo']['display']['name']
+        url = f"https://chat.openai.com/g/{item['resource']['gizmo']['short_url']}" 
+        description = item['resource']['gizmo']['display']['description']
+        content += f'- [{name}]({url}) {description}\n'
+    content += '\n'
 
 for target in targets:
     time.sleep(10)
@@ -57,6 +98,7 @@ for target in targets:
 
     # tranfsorm to markdown format
     content += '## ' + gpt_type + '\n'
+    content += '> ' + title_desc[gpt_type] + '\n'
     for item in json_data['list']['items']:
         name = item['resource']['gizmo']['display']['name']
         url = f"https://chat.openai.com/g/{item['resource']['gizmo']['short_url']}" 
