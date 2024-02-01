@@ -1,0 +1,6 @@
+chromedriver-autoinstaller
+selenium
+pyvirtualdisplay
+requests
+lxml
+bs4
