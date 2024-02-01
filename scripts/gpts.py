@@ -1,8 +1,12 @@
 import os
+import sys
 import json
 import time
 import requests
-
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import WebDriverException
+from bs4 import BeautifulSoup
 
 targets = ['https://chat.openai.com/public-api/gizmos/discovery/trending',
 'https://chat.openai.com/public-api/gizmos/discovery/research',
@@ -25,27 +29,50 @@ title_desc = {"Top Picks": "Most popular GPTs by GPT Store community",
 featured = r"https://chat.openai.com/public-api/gizmos/discovery"
 
 def get_trending_data(url):
-    time.sleep(5)
-    params = {
-        'cursor': '0',
-        'limit': '10',
-        'locale': 'global'
-    }
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
-    }
+    try:
+        # set chrome options
+        options = Options()
+        options.add_argument("--headless")  # headless
+        options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36")
+        
+        # initialize WebDriver
+        driver = webdriver.Chrome(options=options)
 
-    response = requests.get(url, headers=headers, params=params)
+        # access target url
+        driver.get(url)
 
-    if response.status_code == 200:
-        return response.text
-    else:
+        # wait for page loading
+        driver.implicitly_wait(5)
+
+        # get html content
+        html_content = driver.page_source
+
+        # use BeautifulSoup to parse html content
+        soup = BeautifulSoup(html_content, 'lxml')
+
+        # get json data
+        content = soup.find('pre').text
+
+        # close WebDriver
+        driver.quit()
+        return content
+
+    except WebDriverException as e:
+        print(f"WebDriver Error: {e}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
         return None
 
 raw_data = []
 
-content = """
-# Today's Trending\n
+# generate folder :yyyy-mm-dd
+folder = time.strftime("%Y-%m-%d", time.localtime())
+if not os.path.exists(folder):
+    os.mkdir(folder)
+
+content = f"""
+# Today's Trending - {folder}\n
 - [Featured](#featured)
 - [Top Picks](#top-picks)
 - [Research \& Analysis](#research--analysis)
@@ -56,11 +83,6 @@ content = """
 - [Education](#education)
 - [Lifestyle](#lifestyle)\n\n
 """
-
-# generate folder :yyyy-mm-dd
-folder = time.strftime("%Y-%m-%d", time.localtime())
-if not os.path.exists(folder):
-    os.mkdir(folder)
 
 # get featured data
 data = get_trending_data(featured)
@@ -114,3 +136,12 @@ with open(folder + '/README.md', 'w', encoding='utf-8') as f:
 # save raw data
 with open(folder + '/raw_data.json', 'w', encoding='utf-8') as f:
     json.dump(raw_data, f, ensure_ascii=False, indent=4)
+
+# update README.md
+content = \
+"""# gpts-trending
+Record everyday Top GPTs in ChatGPT GPTs Store\n""" \
+     + content
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(content)
