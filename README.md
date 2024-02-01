@@ -1,7 +1,8 @@
 # gpts-trending
 Record everyday Top GPTs in ChatGPT GPTs Store
 
-# Today's Trending - 2024-01-31
+
+# Today's Trending - 2024-02-01
 
 - [Featured](#featured)
 - [Top Picks](#top-picks)
@@ -54,7 +55,7 @@ Record everyday Top GPTs in ChatGPT GPTs Store
 - [Cartoonize Yourself](https://chat.openai.com/g/g-gFFsdkfMC-cartoonize-yourself) Turns photos into Pixar-style illustrations. Upload your photo to try
 - [Consistent Character GPT👉🏼 Fast & High Quality⚡️](https://chat.openai.com/g/g-a9JivI0y2-consistent-character-gpt-fast-high-quality) Your creative partner for generating characters in different poses, expressions, styles, and scenes. No prompt needed, just start with 'CLICK HERE' and follow the steps.
 - [Super Describe](https://chat.openai.com/g/g-9qWC0oyBd-super-describe) Upload any image to get a similar one using DALL·E 3 along with the detailed prompt!
-- [Photo Multiverse](https://chat.openai.com/g/g-ZctQCI6MG-photo-multiverse) Upload your photo and I’ll change the background but maintain the subject. Try it on selfies, people, pets, products!
+- [Photo Multiverse](https://chat.openai.com/g/g-ZctQCI6MG-photo-multiverse) Upload your photo & I’ll change the background location, person's clothing, pose, expressions, or convert to a cartoon. Try it with people, pets or products! (Images generated with DALL·E)
 - [Image Edit, Recreate & Merge](https://chat.openai.com/g/g-SIE5101qP-image-edit-recreate-merge) Replicate Image, Images Merge, Image Edit, Style Transfer. Use "Help" for more info. 20+ features of the source image will be transferred.
 - [Image Copy Machine GPT](https://chat.openai.com/g/g-g0efUwWgG-image-copy-machine-gpt) Replicates and creatively reinterprets images. Just upload your photo, and let the GPT do its magic.  Remember to adhere to copyright regulations. Welcome to the best Image GPT powered by DALL·E ChatGPT.
 - [Glibatree Art Designer](https://chat.openai.com/g/g-7CKojumSX-glibatree-art-designer) Art Generation Made Easy! This GPT will fill in details about your idea and make four images, each better than you imagined.
