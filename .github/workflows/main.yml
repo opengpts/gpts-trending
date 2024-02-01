@@ -3,7 +3,7 @@ name: Scheduled Python Script Execution
 on:
   schedule:
     # UTC 12:00
-    - cron: '0 12 * * *'
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 jobs:
@@ -17,12 +17,16 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
-
-    - name: Install dependencies
+        python-version: '3.8'
+        
+    - name: Removing previous chrome instances on runner 
       run: |
-        python -m pip install --upgrade pip
-        pip install requests
+          sudo apt purge google-chrome-stable  
+        
+       # Need to fetch reqs if needed
+    - name: Installing all necessary packages
+      run: |
+          pip install -r requirements.txt
 
     - name: Run script
       run: python scripts/gpts.py
@@ -32,8 +36,8 @@ jobs:
         git config --local user.email "gpts.open@gmail.com"
         git config --local user.name "opengpts"
         git add -A
-        DATE=$(date -u +"%Y-%m-%d %H:%M:%S")
-        git commit -m "Add Today's($DATE) ranking" -a
+        DATE=$(date -u +"%Y-%m-%d")
+        git commit -m "Add Today's ($DATE) ranking" -a
 
     - name: Push changes
       uses: ad-m/github-push-action@master
