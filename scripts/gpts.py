@@ -67,7 +67,11 @@ def get_trending_data(url):
 raw_data = []
 
 # generate folder :yyyy-mm-dd
-folder = time.strftime("%Y-%m-%d", time.localtime())
+parent_folder = time.strftime("%Y-%m", time.localtime())
+if not os.path.exists(parent_folder):
+    os.mkdir(parent_folder)
+
+folder = parent_folder + '/' + time.strftime("%Y-%m-%d", time.localtime())
 if not os.path.exists(folder):
     os.mkdir(folder)
 
@@ -106,6 +110,7 @@ if data:
 
 for target in targets:
     time.sleep(10)
+    print(f"get {target}")
     data = get_trending_data(target)
 
     if not data:
