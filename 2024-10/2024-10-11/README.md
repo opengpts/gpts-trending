@@ -1,5 +1,3 @@
-# gpts-trending
-Record everyday Top GPTs in ChatGPT GPTs Store
 
 # Today's Trending - 2024-10/2024-10-11
 
